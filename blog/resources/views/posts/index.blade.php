@@ -13,7 +13,7 @@
     <body>
         <h1>Blog Name</h1>
         <div class='posts'>
-            @foreach ($posts as $post)
+            @foreach ($test as $post)
                 <div class='post'>
                     <h2 class='title'>{{ $post->title }}</h2>
                     <p class='body'>{{ $post->body }}</p>
@@ -21,7 +21,7 @@
             @endforeach
         </div>
         <div class='paginate'>
-            {{ $posts->links() }}
+            {{ $test->links() }}
         </div>
     </body>
 </html>
