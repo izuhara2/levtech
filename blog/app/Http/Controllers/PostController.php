@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+
    public function index(Post $post)
     {
        return view('posts/index')->with(['posts' => $post->getPaginateByLimit()]);
@@ -23,4 +24,3 @@ class PostController extends Controller
         return view('posts/show')->with(['post' => $post]);
     }   
 }
-
